@@ -32,16 +32,16 @@ export default class App extends React.Component {
     return (
       <div>
         <a href={GITHUB_URL}>
-          <ImgRibbon src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" />
+          <ImgRibbon src="https://s3.amazonaws/.png" alt="FIND MY NFT" />
         </a>
         <Header>
           <h1>
-            The Ship's Log
+            The NFTCreate's Log
           </h1>
           <h6>
             <a target="_blank" rel="noopener noreferrer" href={OPENSEA_JS_URL}>
               <img alt="OpenSea logo" className="mr-2" src="/opensea-logo.png" />OpenSea.js
-            </a> example dapp
+            </a> NFTCREATE 
           </h6>
         </Header>
         <main>
