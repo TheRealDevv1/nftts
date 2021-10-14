@@ -130,15 +130,24 @@ export default class Log extends React.Component {
       <div className="row">
         <div className="mb-3 ml-4">
           Filter orderbook:
+
+            </div>
           <div className="btn-group ml-4" role="group">
             <button type="button" className={"btn btn-outline-primary " + (sellSide ? "active" : "")} data-toggle="button" onClick={() => this.toggleSide(OrderSide.Sell)}>
               Auctions
             </button>
-            <button type="button" className={"btn btn-outline-success " + (buySide ? "active" : "")} data-toggle="button" onClick={() => this.toggleSide(OrderSide.Buy)}>
-              Bids
+          </div>
+          <div className="btn-group ml-4" role="group">
+            <button type="button" className={"btn btn-outline-primary " + (sellSide ? "active" : "")} data-toggle="button" onClick={() => this.toggleSide(OrderSide.Sell)}>
+              Auctions
             </button>
           </div>
-        </div>
+        <div className="mb-3 ml-4">
+          <div className="btn-group" role="group">
+            <button type="button" className={"btn btn-outline-secondary " + (onlyForMe ? "active" : "")} data-toggle="button" onClick={() => this.toggleForMe()}>
+              For Me
+            </button>
+            </div>
         <div className="mb-3 ml-4">
           <div className="btn-group" role="group">
             <button type="button" className={"btn btn-outline-secondary " + (onlyForMe ? "active" : "")} data-toggle="button" onClick={() => this.toggleForMe()}>
@@ -147,6 +156,8 @@ export default class Log extends React.Component {
             <button type="button" className={"btn btn-outline-secondary " + (onlyByMe ? "active" : "")} data-toggle="button" onClick={() => this.toggleByMe()}>
               By Me
             </button>
+            
+            </div>
           </div>
         </div>
         <div className="mb-3 ml-4">
